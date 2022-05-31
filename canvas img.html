@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <a href="Assignment.html"> All Assignment</a>
+		<h1 style="text-align:center;">Canvas Image EXAMPLES</h1><br>
+        <h2>
+            Image To Use
+        </h2>
+        <img id="scream" src="image/Dy Patil Logo.png" alt="the Scream" width="330" height="300">
+        <p><button onclick="myCanvas()"> Try It</button></p> 
+        <canvas id="myCanvas" width="300" height="300" style="border: 2px solid #d3d3d3;">
+        </canvas>
+        <script>
+            function myCanvas(){
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                var img = document.getElementById("scream");
+                ctx.drawImage(img,2,2);
+            }
+        </script>
+    </body>
+</html>
